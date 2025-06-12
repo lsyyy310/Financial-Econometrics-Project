@@ -12,7 +12,6 @@ Does momentum strategy generate abnormal returns that cannot be explained by tra
 - **Sample Period**: January 2001 - December 2023
 
 ## Methodology
-
 ### Portfolio Construction
 1. **Formation Period**: Past 12-month average returns (J=12)
 2. **Holding Period**: Future 3-month average returns (K=3)
@@ -26,6 +25,20 @@ Does momentum strategy generate abnormal returns that cannot be explained by tra
 2. **Risk-Adjusted Outperformance**: Winner portfolios exhibit significant positive alphas in all models
 3. **Size Effect**: Momentum is more pronounced in larger stocks (value-weighted > equal-weighted)
 4. **Factor Independence**: Momentum represents a distinct risk factor beyond traditional models
+
+## Files Structure
+```
+├── main.R
+├── data.zip
+├── Financial_Econometrics_Report.pdf
+└── README.md
+```
+
+## Setup Instructions
+**Before running the analysis**, please move the two datasets (in `data.zip`) to the same directory as `main.R`:
+1. Extract `data.zip`
+2. Place `Data_Stock_Price_Momentum.csv` and `Data_Factors.xlsx` in the same directory as `main.R`
+
 
 ## Technical Implementation
 - **Data Processing**: Panel data handling with time-series operations using `slider` package
